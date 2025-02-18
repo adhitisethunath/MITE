@@ -17,7 +17,7 @@ int isEligible(float salary,int score,int experince){
 }
 
 
-int main(){
+void doTask(){
     float salary;
     int score;
     int experience;
@@ -30,6 +30,15 @@ int main(){
     else{
         printf("Loan Rejected\n");
     }
+}
 
+int main(){
+     int choice;
+    do{
+        doTask();
+        printf("Are you sure to continue(1.continue\t2.exit)?\t");
+        scanf("%d",&choice);
+    }
+    while(1==choice);
     return 0;
 }
